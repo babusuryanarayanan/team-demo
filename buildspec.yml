@@ -2,7 +2,7 @@ version: 0.2
 variables:
         CACHE_CONTROL: "86400"
         S3_BUCKET: "ci-cd-demo-app"
-        BUILD_JAR: "target/teamdemo-1.0.0.jar"
+        BUILD_JAR: "target/teamdemo-1.0.1.jar"
         BUILD_ENV: "prod"
 
 phases:
@@ -24,7 +24,7 @@ phases:
 artifacts:
   type: zip	
   files:
-    - target/teamdemo-1.0.0.jar
+    - target/teamdemo-1.0.1.jar
     - samtemplate.yaml
     - outputSamTemplate.yaml
 discard-paths: yes
